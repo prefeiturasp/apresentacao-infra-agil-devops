@@ -11839,7 +11839,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Infra-&#225;gil-e-DevOps">Infra &#225;gil e DevOps<a class="anchor-link" href="#Infra-&#225;gil-e-DevOps">&#182;</a></h1>
+<h1 id="O-que-queremos?">O que queremos?<a class="anchor-link" href="#O-que-queremos?">&#182;</a></h1>
 </div>
 </div>
 </div><div class="fragment">
@@ -11850,7 +11850,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Infraestrutura ágil</li>
-<li>A Cultura DevOps (Development and Operation)</li>
+<li>Cultura DevOps (Development and Operation)</li>
 </ul>
 
 </div>
@@ -11861,7 +11861,70 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><img src="images/iac.jpg"></center>
+<h2 id="Por-que-DevOps?">Por que DevOps?<a class="anchor-link" href="#Por-que-DevOps?">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Benefícios</p>
+<ul>
+<li>Produtividade</li>
+<li>Entrega de valor (time to market)</li>
+<li>Redução de custos</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Desafios</p>
+<ul>
+<li>Mudança de cultura</li>
+<li>Integração das equipes</li>
+<li>Rupturas tecnologicas</li>
+</ul>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="O-que-&#233;-DevOps?">O que &#233; DevOps?<a class="anchor-link" href="#O-que-&#233;-DevOps?">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center><img src="images/devops.png"></center>
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="O-que-a-infra-precisa-prover-(requisitos)?">O que a infra precisa prover (requisitos)?<a class="anchor-link" href="#O-que-a-infra-precisa-prover-(requisitos)?">&#182;</a></h2><ul>
+<li>Provisionamento e orquestração</li>
+<li>Automação ponta-a-ponta</li>
+<li>Auto-serviço e monitoramento</li>
+<li>Gestão de conhecimento (documentação)</li>
+</ul>
+
 </div>
 </div>
 </div></section><section>
@@ -11870,13 +11933,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Provisionamento e orquestração</li>
-<li>Automação</li>
-<li>Autosserviço e monitoramento</li>
-<li>Gestão de conhecimento (documentação)</li>
-</ul>
-
+<center><img src="images/iac.jpg"></center>
 </div>
 </div>
 </div></section><section>
@@ -11913,8 +11970,18 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Virtualiza&#231;&#227;o-e-provisionamento">Virtualiza&#231;&#227;o e provisionamento<a class="anchor-link" href="#Virtualiza&#231;&#227;o-e-provisionamento">&#182;</a></h3><ul>
-<li>KVM + oVirt: (+) funcionalidade nativa de live migration sem licenciamento; (-) licenciamento de cada máquina Windows </li>
-<li>Hyper-V: (+) facilidade para licenciar parque Windows ; (-) não tem plugin para Foreman para autosserviço, dificuldade para automatização de servidores Linux</li>
+<li>KVM + oVirt: <ul>
+<li>(+) funcionalidade nativa de live migration sem licenciamento, portal de auto-serviço e gerenciamento de cotas</li>
+<li>(+) interoperável com o ecossistema</li>
+<li>(-) licenciamento de cada máquina Windows </li>
+</ul>
+</li>
+<li>Hyper-V:<ul>
+<li>(+) facilidade para licenciar parque Windows</li>
+<li>(-) não tem plugin para Foreman para auto-serviço</li>
+<li>(-) dificuldade para automatização de servidores Linux</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -11925,7 +11992,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Orchestra&#231;&#227;o-e-interface-de-autosservi&#231;o">Orchestra&#231;&#227;o e interface de autosservi&#231;o<a class="anchor-link" href="#Orchestra&#231;&#227;o-e-interface-de-autosservi&#231;o">&#182;</a></h3><ul>
+<h3 id="Orquestra&#231;&#227;o-e-interface-de-auto-servi&#231;o">Orquestra&#231;&#227;o e interface de auto-servi&#231;o<a class="anchor-link" href="#Orquestra&#231;&#227;o-e-interface-de-auto-servi&#231;o">&#182;</a></h3><ul>
 <li>Foreman</li>
 </ul>
 <h3 id="Monitoramento">Monitoramento<a class="anchor-link" href="#Monitoramento">&#182;</a></h3><ul>
@@ -11944,7 +12011,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Aquitetura-implementada">Aquitetura implementada<a class="anchor-link" href="#Aquitetura-implementada">&#182;</a></h2><center><img src="images/foreman.png"></center>
+<h2 id="Arquitetura-implementada">Arquitetura implementada<a class="anchor-link" href="#Arquitetura-implementada">&#182;</a></h2><center><img src="images/foreman.png"></center>
 </div>
 </div>
 </div></section><section>
@@ -11970,9 +12037,10 @@ a.anchor-link {
 <h2 id="Pr&#243;ximos-passos-para-IaaS">Pr&#243;ximos passos para IaaS<a class="anchor-link" href="#Pr&#243;ximos-passos-para-IaaS">&#182;</a></h2><ul>
 <li>Documentação automatizada para provisionamento de IP (IPAM)</li>
 <li>Foreman gerenciar o DNS</li>
+<li><a href="https://www.inovex.de/blog/deploying-windows-server-with-foreman-in-vsphere/">Implementar criação de VM Windows Server no Foreman</a></li>
 <li>Agenda positiva com fornecedores para otimização de ativos</li>
 <li>Testar plugin do Foreman para a Azure</li>
-<li>oVirt Manager em HA para maior resiliência</li>
+<li>Implementar oVirt Manager em HA para maior resiliência</li>
 </ul>
 
 </div>
@@ -11983,7 +12051,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Vis&#227;o-de-futuro-da-infra">Vis&#227;o de futuro da infra<a class="anchor-link" href="#Vis&#227;o-de-futuro-da-infra">&#182;</a></h1>
+<h1 id="Vis&#227;o-de-futuro">Vis&#227;o de futuro<a class="anchor-link" href="#Vis&#227;o-de-futuro">&#182;</a></h1>
 </div>
 </div>
 </div><div class="fragment">
@@ -11994,6 +12062,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Sinergia entre cultura DevOps, arquitetura técnica habilitadora e comunidade técnica</li>
+<li>Inovação e colaboração</li>
 </ul>
 
 </div>
